@@ -1,1 +1,95 @@
-
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Career Interest Survey Form</title>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="styles.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        </head>
+        <body>
+            <div class="container">
+                <form id="survey-form" action="/form/submit" method="post">
+                    <h1 id="title">Career Interest Survey Form</h1>
+                    <p id="description">Complete our Career Interest Survey to help you find the career best suited for you, based on your personal profile.</p>
+                    <hr>
+                    <p class="name">
+                        <label for="name" id="name-label">Full Name</label>
+                        <input id="name" type="text" placeholder="Enter your full name" required />
+                    </p>
+                    <p class="email">
+                        <label for="email" id="email-label">Email Address</label>
+                        <input id="email" type="email" placeholder="Enter your Email Address" required />
+                    </p>
+                    <p class="number">
+                        <label for="number" id="number-label">Age</label>
+                        <input id="number" type="number" min="18" max="55" placeholder="Age" />
+                    </p>
+                    <div class="gender-container">
+                        <div class="gender-title">Gender</div>
+                        <div class="gender">
+                            <label id="gender"><input type="radio" value="male" name="gender" /> Male</label>
+                            <label id="gender"><input type="radio" value="female" name="gender" /> Female</label>
+                        </div>
+                    </div>
+                    <div class="dream-career">
+                        <label>What is your current career? Does it match your dream career?</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="career-goals">
+                        <label>What are your career goals as of now?</label>
+                        <textarea></textarea>
+                    </div>
+                    <div class="change-career">
+                        <label for="dropdown">If you had the chance to change your current career field, would you do it?</label>
+                        <select id="dropdown">
+                            <option value="">Select an option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="interest">
+                        <div class="interest-title">Fields you are interested in</div>
+                        <div class="interest-options">
+                            <div class="interests-1">
+                                <label><input type="checkbox" value="Mathematics" /> Mathematics</label>
+                                <label><input type="checkbox" value="IT Programming" /> IT Programming</label>
+                                <label><input type="checkbox" value="Politics" /> Politics</label>
+                                <label><input type="checkbox" value="Marketing" /> Marketing</label>
+                                <label><input type="checkbox" value="Journalism" /> Journalism</label>
+                            </div>
+                            <div class="interests-2">
+                                <label><input type="checkbox" value="Agriculture" /> Agriculture</label>
+                                <label><input type="checkbox" value="Law" /> Law</label>
+                                <label><input type="checkbox" value="Education" /> Education</label>
+                                <label><input type="checkbox" value="Business" /> Business</label>
+                                <label><input type="checkbox" value="Psychology" /> Psychology</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qualities">
+                        <div class="qualities-title">Personal Qualities</div>
+                        <div class="qualities-options">
+                            <div class="qualities-1">
+                                <label><input type="checkbox" value="Fast Leaner" /> Fast Leaner</label>
+                                <label><input type="checkbox" value="Organized" /> Organized</label>
+                                <label><input type="checkbox" value="Tenacious" /> Tenacious</label>
+                                <label><input type="checkbox" value="Creative" /> Creative</label>
+                                <label><input type="checkbox" value="Communicative" /> Communicative</label>
+                            </div>
+                            <div class="qualities-2">
+                                <label><input type="checkbox" value="Self-Educated" /> Self-Educated</label>
+                                <label><input type="checkbox" value="Self-Motivated" /> Self-Motivated</label>
+                                <label><input type="checkbox" value="Methodical" /> Methodical</label>
+                                <label><input type="checkbox" value="Competitive" /> Competitive</label>
+                                <label><input type="checkbox" value="Decision Maker" /> Decision Maker</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button id="submit">Submit Career Interest Survey</button>
+                    </div>
+                </form>
+            </div>
+        </body>
+    </html>
