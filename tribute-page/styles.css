@@ -40,6 +40,7 @@ img {
 #image {
     max-width: 100%;
     height: auto;
+    min-width: 100%;
 }
 
 #img-caption {
@@ -99,4 +100,54 @@ h3 {
 
 #tribute-link {
     color: Gainsboro;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    
+    #main {
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    #title {
+        font-size: 3rem;
+    }
+    
+    .description {
+        font-size: 1.1rem;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    body {
+        font-size: 15px;
+    }
+    
+    #main {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    #title {
+        font-size: 3.2rem;
+    }
+    
+    .description {
+        font-size: 1.1rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
 }
