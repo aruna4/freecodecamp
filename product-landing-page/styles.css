@@ -586,33 +586,39 @@ body {
     }
     
     .features {
+        width: 80%;
         margin: 60px auto;
     }
     
+    .icon {
+        width: 12%;
+    }
+    
     .description {
+        width: 88%;
         padding-left: 0px;
     }
     
     .description h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     
     .description p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     
     .product-wrapper {
-        width: 100%;
+        width: 90%;
     }
     
     .product {
-        width: 30%;
+        width: 28%;
         flex: unset;
         column-gap: 25px;
     }
     
     #form {
-        width: 70%;
+        width: 65%;
     }
     
     #form h2 {
