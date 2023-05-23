@@ -59,6 +59,10 @@ body {
     font-weight: 500;
 }
 
+ul {
+    list-style: none;
+}
+    
 .container {
     position: relative;
     width: 95%;
@@ -263,17 +267,30 @@ body {
     
     .nav-link {
         font-size: 0.9rem;
-        border-bottom: solid 1px #A9A9A9;
+        
     }
-    
-    .nav-link:first-child {
-        border-top: solid 1px #A9A9A9;
-        padding-top: 15px;
-    }
-    
+        
     .navbar-style {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        text-align: center;
+        
+    }
+    
+    .navbar-style li {
+        padding: 8px 0;
+        border-bottom: solid 1px #A9A9A9;
+    }
+    
+    .navbar-style li:first-child {
+        border-top: solid 1px #A9A9A9;
+        margin-top: 15px;
+    }
+    
+    .navbar-style li:last-child {
+        border-bottom: none;
     }
     
     .container {
@@ -404,6 +421,7 @@ body {
     
     .nav-link {
         font-size: 1.1rem;
+        display: block;
     }
     
     .container {
@@ -471,6 +489,7 @@ body {
         font-size: 1.6rem;
         padding-bottom: 35px;
     }
+    
     .submit-btn input {
         font-size: 1.2rem;
         height: 43px;
@@ -537,7 +556,7 @@ body {
     }
     
     .top-nav {
-        width: 45%;
+        width: 40%;
     }
     
     #header-img {
@@ -545,11 +564,12 @@ body {
     }
     
     .nav-bar {
-        width: 50%;
+        width: 55%;
     }
     
     .nav-link {
         font-size: 1.2rem;
+        display: inline-block;
     }
     
     .container {
@@ -558,6 +578,10 @@ body {
     
     .product-wrapper {
         width: 85%;
+    }
+    
+    #form h2 {
+        padding-bottom: 45px;
     }
 }
 
@@ -617,6 +641,15 @@ body {
         column-gap: 25px;
     }
     
+    .product-5,
+    .product-6 {
+        margin-bottom: 0px;
+    }
+    
+    .size-chart {
+        margin: 40px auto 30px auto;
+    }
+    
     #form {
         width: 65%;
     }
@@ -644,7 +677,53 @@ body {
 /* XX-Large Screen sizes above 1536px */
 
 @media only screen and (min-width: 1536px) {
+    .container {
+        top: 120px;
+    }
     
+    .features {
+        width: 70%;
+    }
+    
+    .icon {
+        width: 15%;
+    }
+    
+    .description {
+        width: 85%
+    }
+    
+    .description h3 {
+        font-size: 1.4rem;
+    }
+    
+    .description p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Screen sizes between 1632px and 1728px */
+
+@media only screen and (min-width: 1632px) and (max-width: 1728px) {
+    .container {
+        top: 126px;
+    }
+}
+
+/* Screen sizes between 1729px and 1824px */
+
+@media only screen and (min-width: 1729px) and (max-width: 1824px) {
+    .container {
+        top: 132px;
+    }
+}
+
+/* Screen sizes between 1825px and 1920px */
+
+@media only screen and (min-width: 1825px) and (max-width: 1920px) {
+    .container {
+        top: 138px;
+    }
 }
 
 /* Full HD Screen Sizes above 1920px */
