@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
   width: 100%;
   height: 100vh;
@@ -19,7 +23,7 @@ body {
 #title {
   text-align: center;
   padding-top: 30px;
-  font-size: 2.7em;
+  font-size: 2.7rem;
 }
 
 #description {
@@ -29,7 +33,9 @@ body {
 }
 
 hr {
-    margin: 30px 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 95.5%;
 }
 
 .name,
@@ -44,6 +50,32 @@ hr {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name {
+    padding-bottom: 13px;
+}
+
+.email,
+.number,
+.gender-container,
+.dream-career,
+.career-goals,
+.change-career,
+.interest,
+.qualities {
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.name,
+.email,
+.number {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .name label,
@@ -56,8 +88,8 @@ hr {
 .interest-title,
 .qualities-title {
     width: 47%;
-    padding-left: 15px;
     font-weight: bold;
+    padding-right: 25px;
 }
 
 .name input,
@@ -68,12 +100,19 @@ hr {
 .change-career select,
 .interest-options,
 .qualities-options {
-    width: 46.5%;
+    width: 53%;
     align-self: flex-end;
     border: none;
+    padding-left: 15px;
+    border-radius: 3px;
+}
+
+.name input,
+.email input,
+.number input,
+.change-career select {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 15px;
 }
 
 placeholder {
@@ -81,7 +120,7 @@ placeholder {
 }
 
 .gender {
-    width: 46.5%;
+    width: 53%;
     border: none;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -94,8 +133,13 @@ placeholder {
 }
 
 textarea {
-    margin: 10px 0;
     height: 100px;
+}
+
+#dropdown,
+.interest-options,
+.qualities-options {
+    width: 53%;
 }
 
 .dream-career label,
@@ -103,12 +147,6 @@ textarea {
 .interest-title,
 .qualities-title {
   align-self: flex-start;
-  padding-top: 10px;
-}
-
-.change-career,
-.interest {
-  padding-top: 10px;
 }
 
 .interest-options,
@@ -131,6 +169,17 @@ textarea {
   width: 40%;
 }
 
+.interest-options label,
+.qualities-options label {
+  display: block;
+}
+
+input[type=checkbox] {
+  vertical-align: middle;
+  position: relative;
+  bottom: 1px;
+}
+
 .btn {
   display: flex;
   justify-content: center;
@@ -148,5 +197,262 @@ textarea {
   font-size: 16px;
   border: none;
   font-weight: bold;
+}
+
+/* X-Small Screen Sizes below 600px */
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
   
+  .container {
+    width: 100%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+  
+  #title {
+    margin: 0 auto;
+    font-size: 2.3rem;
+  }
+  
+  #description {
+    padding-top: 15px;
+    width: 80%;
+  }
+  
+  .interest,
+  .qualities {
+    flex-direction: column;
+  }
+  
+  .interest-options,
+  .qualities-options {
+    width: 100%;
+    padding-top: 10px;
+  }
+  
+  .interest-title,
+  .qualities-title {
+    width: 100%;
+  }
+}
+
+/* Screen sizes between 240px and 450px */
+
+@media only screen and (min-width: 240px) and (max-width: 450px) {
+  #title {
+    font-size: 1.8rem;
+  }
+  
+  #description {
+    text-align: justify;
+  }
+  
+  .name,
+  .email,
+  .number,
+  .gender-container,
+  .dream-career,
+  .career-goals,
+  .change-career {
+    flex-direction: column;
+  }
+  
+  .name,
+  .email,
+  .number,
+  .gender-container,
+  .dream-career,
+  .career-goals,
+  .change-career,
+  .interest,
+  .qualities {
+    width: 93%;
+  }
+  
+  .name label,
+  .email label,
+  .number label,
+  .gender-title,
+  .dream-career label,
+  .career-goals label,
+  .change-career label,
+  .interest-title,
+  .qualities-title {
+    width: 100%;
+    padding-right: 0px;
+    padding-bottom: 10px;
+  }
+  
+  .name input,
+  .email input,
+  .number input,
+  .dream-career textarea,
+  .career-goals textarea,
+  .change-career select,
+  #dropdown,
+  .interest-options,
+  .qualities-options {
+    width: 100%;
+  }
+  
+  .gender {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 0px;
+  }
+  
+  #gender {
+    width: 100%;
+  }
+  
+  .gender label:first-of-type {
+    padding-bottom: 3px;
+  }
+  
+  .interest-options,
+  .qualities-options {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 0px;
+  }
+  
+  .interests-1,
+  .interests-2,
+  .qualities-1,
+  .qualities-2 {
+    width: 100%;
+  }
+  
+  .btn {
+    width: 93%;
+    margin: auto;
+  }
+  
+  #submit {
+    width: 100%;
+    font-size: 14px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
+}
+
+/* Small Screen sizes above 600px */
+
+@media only screen and (min-width: 601px) {
+  .container {
+    width: 95%;
+  }
+  
+  #title {
+    font-size: 2.4rem;
+  }
+  
+  #description {
+    width: 70%;
+  }
+  
+  .interest,
+  .qualities {
+    flex-direction: column;
+  }
+  
+  .interest-options,
+  .qualities-options {
+    width: 100%;
+    padding-top: 10px;
+  }
+}
+
+/* Medium Screen sizes above 768px */
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 87%;
+  }
+  
+  .interest,
+  .qualities {
+    flex-direction: row;
+  }
+  
+  .interest-options,
+  .qualities-options {
+      width: 53%;
+      padding-top: 0px;
+  }
+}
+
+/* Screen sizes between 896px and 1024px */
+
+@media only screen and (min-width: 896px) and (max-width: 1024px) {
+  .container {
+    width: 82%;
+  }
+}
+
+/* Screen sizes between 1025px and 1152px */
+
+@media only screen and (min-width: 1024px) and (max-width: 1152px) {
+  .container {
+    width: 77%;
+  }
+}
+
+/* Screen sizes between 1152px and 1280px */
+
+@media only screen and (min-width: 1152px) and (max-width: 1280px) {
+  .container {
+    width: 72%;
+  }
+}
+
+/* Large Screen sizes above 1280px */
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    width: 67%;
+  }
+}
+
+/* Screen sizes between 1408px and 1536px */
+
+@media only screen and (min-width: 1408px) and (max-width: 1536px) {
+  .container {
+    width: 63.6%;
+  }
+}
+
+/* Screen sizes between 1536px and 1664px */
+
+@media only screen and (min-width: 1536px) and (max-width: 1664px) {
+  .container {
+    width: 60.1%;
+  }
+}
+
+/* Screen sizes between 1664px and 1792px */
+
+@media only screen and (min-width: 1664px) and (max-width: 1792px) {
+  .container {
+    width: 56.7%;
+  }
+}
+
+/* Screen sizes between 1792px and 1920px */
+
+@media only screen and (min-width: 1792px) and (max-width: 1920px) {
+  .container {
+    width: 53.3%;
+  }
+}
+
+/* Full HD Screen Sizes above 1920px */
+
+@media only screen and (min-width: 1920px) {
+  .container {
+    width: 50%;
+  }
 }
