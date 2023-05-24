@@ -426,7 +426,7 @@ ul {
     
     .container {
         width: 90%;
-        top: 180px;
+        top: 156px;
     }
     
     .feature-wrapper {
@@ -500,7 +500,7 @@ ul {
 
 @media only screen and (min-width: 684px) and (max-width: 768px) {
     .container {
-        top: 192px;
+        top: 168px;
     }
 }
 
@@ -514,7 +514,7 @@ ul {
     
     .container {
         width: 80%;
-        top: 203px;
+        top: 179px;
     }
     
     .buy-now-btn button {
@@ -536,7 +536,7 @@ ul {
 
 @media only screen and (min-width: 843px) and (max-width: 918px) {
     .container {
-        top: 213px;
+        top: 189px;
     }
 }
 
@@ -544,7 +544,7 @@ ul {
 
 @media only screen and (min-width: 918px) and (max-width: 992px) {
     .container {
-        top:224px;
+        top:200px;
     }
 }
 
@@ -573,7 +573,7 @@ ul {
     }
     
     .container {
-        top: 90px;
+        top: 91px;
     }
     
     .product-wrapper {
@@ -585,28 +585,12 @@ ul {
     }
 }
 
-/* Screen sizes between 1088px and 1184px */
-
-@media only screen and (min-width: 1120px) and (max-width: 1280px) {
-    .container {
-        top: 94px;
-    }
-}
-
-/* Screen sizes between 1184px and 1280px */
-
-@media only screen and (min-width: 1120px) and (max-width: 1280px) {
-    .container {
-        top: 99px;
-    }
-}
-
 /* X-Large Screen sizes above 1280px */
 
 @media only screen and (min-width: 1280px) {
     .container {
         width: 75%;
-        top: 107px;
+        top: 98px;
     }
     
     .features {
@@ -670,7 +654,7 @@ ul {
 
 @media only screen and (min-width: 1408px) and (max-width: 1536px) {
     .container {
-        top: 114px;
+        top: 105px;
     }
 }
 
@@ -678,7 +662,7 @@ ul {
 
 @media only screen and (min-width: 1536px) {
     .container {
-        top: 120px;
+        top: 111px;
     }
     
     .features {
@@ -702,44 +686,82 @@ ul {
     }
 }
 
-/* Screen sizes between 1632px and 1728px */
+/* Screen sizes between 1664px and 1792px */
 
-@media only screen and (min-width: 1632px) and (max-width: 1728px) {
+@media only screen and (min-width: 1664px) and (max-width: 1792px) {
     .container {
-        top: 126px;
+        top: 118px;
     }
 }
 
-/* Screen sizes between 1729px and 1824px */
+/* Screen sizes between 1793px and 1920px */
 
-@media only screen and (min-width: 1729px) and (max-width: 1824px) {
+@media only screen and (min-width: 1793px) and (max-width: 1920px) {
     .container {
-        top: 132px;
-    }
-}
-
-/* Screen sizes between 1825px and 1920px */
-
-@media only screen and (min-width: 1825px) and (max-width: 1920px) {
-    .container {
-        top: 138px;
+        top: 125px;
     }
 }
 
 /* Full HD Screen Sizes above 1920px */
 
 @media only screen and (min-width: 1920px) {
-    
+    .container {
+        top: 132px;
+    }
+}
+
+/* Screen sizes between 2048px and 2176px */
+
+@media only screen and (min-width: 2048px) and (max-width: 2176px) {
+    .container {
+        top: 139px;
+    }
+}
+
+/* Screen sizes between 2177px and 2304px */
+
+@media only screen and (min-width: 2177px) and (max-width: 2304px) {
+    .container {
+        top: 146px;
+    }
+}
+
+/* Screen sizes between 2305px and 2432px */
+
+@media only screen and (min-width: 2305px) and (max-width: 2432px) {
+    .container {
+        top: 153px;
+    }
+}
+
+/* Screen sizes between 2433px and 2560px */
+
+@media only screen and (min-width: 2433px) and (max-width: 2560px) {
+    .container {
+        top: 160px;
+    }
 }
 
 /* Quad HD Screen Sizes above 2560px */
 
 @media only screen and (min-width: 2560px) {
+    .container {
+        top: 159px;
+    }
     
+    .nav-link {
+        font-size: 1.35rem;
+    }
 }
 
 /* 4K Ultra HD Screen Sizes above 3840px */
 
 @media only screen and (min-width: 3840px) {
+    .container {
+        top: 226px;
+    }
     
+    .nav-link {
+        font-size: 1.45rem;
+    }
 }
