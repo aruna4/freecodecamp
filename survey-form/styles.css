@@ -197,6 +197,21 @@ input[type=checkbox] {
   font-size: 16px;
   border: none;
   font-weight: bold;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background-color: burlywood;
+  color: brown;
+  cursor: pointer;
+}
+
+#dropdown {
+  cursor: pointer;
+}
+
+#dropdown > option {
+  font-weight: bold;
 }
 
 /* X-Small Screen Sizes below 600px */
