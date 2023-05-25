@@ -102,7 +102,7 @@ h3 {
     content: counter(section) ". ";
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
     #navbar {
         display: flex;
         flex-direction: column;
@@ -114,7 +114,7 @@ h3 {
     }
     
     #main-doc {
-        width: 100%;
+        width: 95%;
         position: relative;
         margin-top: 300px;
         margin-left: 0;
